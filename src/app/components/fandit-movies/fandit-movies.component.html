@@ -1,0 +1,17 @@
+<div class="app">
+  <div class="search">
+    <input
+      type="text"
+      (keyup)="getMovies($event)"
+      placeholder="buscar pelicula"
+    />
+    <!-- <input type="button" (click)="getMovies(search.value)" value="search" /> -->
+  </div>
+  <div class="container">
+    <app-movies-details
+      *ngFor="let movie of movies"
+      [movie]="movie"
+    ></app-movies-details>
+  </div>
+</div>
+  

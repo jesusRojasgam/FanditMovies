@@ -1,0 +1,37 @@
+<div class="container">
+<div *ngFor="let popular of popularMovies">
+
+
+    <!-- <img class="card-img-top" src="https://i.blogs.es/aa91a3/cine-/1366_2000.jpg" alt="popular.title">
+    <div class="card-body">
+        <h5 class="card-title">{{popular.title}}</h5>
+        <p class="card-text">{{popular.overview}}</p>
+        <p>{{popular.release_date}}</p>
+    </div> -->
+    <!-- <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="https://i.blogs.es/aa91a3/cine-/1366_2000.jpg" alt="{{popular.title}}">
+            <div class="card-body">
+                <h5 class="card-title">{{popular.title}}</h5>
+                <p class="card-text">{{popular.overview}}</p>
+                <p class="card-text"><small class="text-muted">{{popular.release_date}}</small></p>
+            </div>
+        </div>
+  </div> -->
+<div class="movie">
+    <div>
+        <p>{{ popular.release_date }}</p>
+    </div>
+    <div>
+        <img src="https://i.blogs.es/aa91a3/cine-/1366_2000.jpg" [alt]="popular.title" />
+        <div>
+            <br />
+            <p>{{ popular.overview }}</p>
+        </div>
+    </div>
+    <div>
+        <h3>{{ popular.title }}</h3>
+    </div>
+</div>
+
+</div>
